@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI-powered suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FileText",
+    "image": "https://i.ibb.co.com/4nTbMvyc/icons8-resume-64.png"
+  },
+  {
+    "id": 2,
+    "name": "AI Logo Maker",
+    "description": "Generate unique logos instantly using AI.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Custom branding",
+      "High-resolution export",
+      "Editable design"
+    ],
+    "icon": "Palette",
+    "image": "https://i.ibb.co.com/wFTXfbDK/icons8-logo-64.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Scheduler",
+    "description": "Plan and schedule posts across all platforms.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Auto posting",
+      "Analytics dashboard",
+      "Multi-account support"
+    ],
+    "icon": "Calendar",
+    "image": "https://i.ibb.co.com/k2LkY28y/icons8-instagram.gif"
+  },
+  {
+    "id": 4,
+    "name": "Website Builder Kit",
+    "description": "Build responsive websites without coding.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Drag & drop editor", "SEO tools", "Mobile responsive"],
+    "icon": "Globe",
+    "image": "https://i.ibb.co.com/Mkfy8zKc/icons8-content-writing-66.png"
+  },
+  {
+    "id": 5,
+    "name": "AI Content Writer",
+    "description": "Generate blog posts, ads, and content with AI.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["SEO optimization", "Multiple tones", "Fast generation"],
+    "icon": "PenTool",
+    "image": "https://i.ibb.co.com/Mkfy8zKc/icons8-content-writing-66.png"
+  },
+  {
+    "id": 6,
+    "name": "Email Marketing Pro",
+    "description": "Create and manage email campaigns  ",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Automation", "Templates", "Analytics tracking"],
+    "icon": "Mail",
+    "image": "https://i.ibb.co.com/gFSJ7cBz/icons8-email-marketing-64.png"
+  },
+  {
+    "id": 7,
+    "name": "Graphic Design Toolkit",
+    "description": "Design stunning graphics for social media and ads.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Templates library", "Icons & fonts", "Export options"],
+    "icon": "Image",
+    "image": "https://i.ibb.co.com/Gvs9rMcX/icons8-microsoft-clipchamp-48.png"
+  },
+  {
+    "id": 8,
+    "name": "Project Management Tool",
+    "description": "Manage tasks and team collaboration efficiently.",
+    "price": 11.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Task tracking", "Team collaboration", "Kanban boards"],
+    "icon": "CheckSquare",
+    "image": "https://i.ibb.co.com/VW28dL0T/icons8-project-48.png"
+  },
+  {
+    "id": 9,
+    "name": "Video Editor Pro",
+    "description": "Edit videos with advanced tools and effects.",
+    "price": 39.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["4K editing", "Transitions", "Audio tools"],
+    "icon": "Video",
+    "image": "https://i.ibb.co.com/0VKKq5xb/icons8-final-cut-pro-x-48.png"
+  },
+  {
+    "id": 10,
+    "name": "Cloud Storage Plus",
+    "description": "Secure cloud storage for all your files.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["100GB storage", "Secure backup", "File sharing"],
+    "icon": "Cloud",
+    "image": "https://i.ibb.co.com/0yHyddyh/icons8-claude-ai-48.png"
+  }
+]

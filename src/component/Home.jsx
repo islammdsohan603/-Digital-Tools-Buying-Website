@@ -1,6 +1,7 @@
 import React from 'react';
 import { Play } from 'lucide-react';
 import banner from '../assets/banner.png';
+import play from '../assets/play.png';
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
             </button>
 
             <button className="px-6 py-3  cursor-pointer border-2 border-[#4F39F6] text-[#4F39F6] rounded-full font-semibold hover:bg-[#4F39F6] hover:text-white transition-all duration-300 flex items-center gap-2">
-              <Play className="w-4 h-4" />
+              <img src={play} alt="" />
               Watch Demo
             </button>
           </div>
