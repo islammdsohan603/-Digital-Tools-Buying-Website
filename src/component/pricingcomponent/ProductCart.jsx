@@ -27,7 +27,7 @@ const ProductCart = ({ item, cart, setCart }) => {
         {tag}
       </div>
 
-      <img src={image} alt="" className="w-20 object-contain" />
+      <img src={image} alt="" className="w-20 h-20 object-contain" />
       <h1 className="text-2xl font-bold"> {name} </h1>
 
       <p className="text-lg font-semibold text-neutral-600"> {description} </p>

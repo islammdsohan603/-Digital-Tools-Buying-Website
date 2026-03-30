@@ -9,6 +9,7 @@ import ProductsData from './component/pricingcomponent/ProductsData';
 import Steps from './component/Steps';
 import PricingCartd from './component/PricingCartd';
 import ViewPicingBtn from './component/ViewPicingBtn';
+import Footer from './component/Footer';
 
 const promiesData = async () => {
   const res = await fetch('/Plans.json');
@@ -51,6 +52,7 @@ const App = () => {
       </Suspense>
 
       <ViewPicingBtn />
+      <Footer />
 
       <ToastContainer />
     </div>

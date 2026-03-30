@@ -1,8 +1,13 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const PricingItem = ({ plans }) => {
   const { plan, price, description, billing, features, popular, buttonText } =
     plans;
+
+  const handelStart = () => {
+    toast.success(`You have selected the ${plan} plan!`);
+  };
 
   return (
     <div
@@ -43,6 +48,7 @@ const PricingItem = ({ plans }) => {
       ))}
 
       <button
+        onClick={handelStart}
         className={`w-full mt-auto cursor-pointer py-2 rounded-lg font-bold ${
           popular
             ? 'bg-white text-black border border-gray-300'
