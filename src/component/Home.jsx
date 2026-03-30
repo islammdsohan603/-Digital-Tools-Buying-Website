@@ -4,7 +4,7 @@ import banner from '../assets/banner.png';
 
 const Home = () => {
   return (
-    <div className="w-11/12   lg:w-10/12 mx-auto pt-6 pb-20 md:pt-10 lg:pt-16">
+    <div className="w-11/12   lg:w-10/12 mx-auto pt-6 pb-20 md:pt-10 lg:pt-16 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Left Content */}
         <div className="flex flex-col justify-center items-center text-center lg:text-left lg:items-start space-y-6 md:space-y-8 order-2 lg:order-1">
@@ -20,7 +20,7 @@ const Home = () => {
           <div className="space-y-4 max-w-lg lg:max-w-none">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Supercharge Your <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-[#4F39F6] to-[#627382] text-transparent bg-clip-text">
+              <span className="bg-linear-to-r from-[#4F39F6] to-[#627382] text-transparent bg-clip-text">
                 Digital Workflow
               </span>
             </h1>
@@ -34,11 +34,11 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
-            <button className="px-6 py-3 bg-linear-to-r from-[#4F39F6] to-[#627382] text-white rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+            <button className="px-6 py-3  cursor-pointer bg-linear-to-r from-[#4F39F6] to-[#627382] text-white rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
               Explore Products
             </button>
 
-            <button className="px-6 py-3 border-2 border-[#4F39F6] text-[#4F39F6] rounded-full font-semibold hover:bg-[#4F39F6] hover:text-white transition-all duration-300 flex items-center gap-2">
+            <button className="px-6 py-3  cursor-pointer border-2 border-[#4F39F6] text-[#4F39F6] rounded-full font-semibold hover:bg-[#4F39F6] hover:text-white transition-all duration-300 flex items-center gap-2">
               <Play className="w-4 h-4" />
               Watch Demo
             </button>
