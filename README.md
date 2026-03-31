@@ -111,22 +111,6 @@ npm run dev
 
 ---
 
-## 📌 Future Improvements
-
-- 🔐 User authentication system
-- 💳 Payment gateway integration
-- 📊 Dashboard for users
-- ❤️ Wishlist feature
-
----
-
-## 🙌 Author
-
-👤 MD:SOHAN 🔗
-GitHub:https://github.com/islammdsohan603/-Digital-Tools-Buying-Website
-
----
-
 ## ⭐ Support
 
 If you like this project, feel free to ⭐ the repository and share your
