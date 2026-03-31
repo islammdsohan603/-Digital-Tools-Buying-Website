@@ -3,10 +3,10 @@ import users from '../assets/user.png';
 import packageImage from '../assets/package.png';
 import rocket from '../assets/rocket.png';
 
-const Steps = () => {
+const Steps = ({ darkMode }) => {
   return (
-    <div className="  bg-base-200">
-      <div className="mb-10 md:mb-20 w-10/12 mx-auto ">
+    <div className={`${darkMode ? 'bg-black text-white' : 'bg-base-200'}`}>
+      <div className="pt-10 pb:mb-20 w-10/12 mx-auto ">
         <div className=" p-8 text-center">
           <h1 className=" text-2xl md:text-4xl lg:text-5xl font-bold">
             Get Started In 3 Steps

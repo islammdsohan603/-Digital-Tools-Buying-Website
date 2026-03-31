@@ -18,22 +18,6 @@ const Footer = () => {
               Your one-stop shop for digital tools and software solutions.
               Empowering businesses with cutting-edge technology.
             </p>
-
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3">
-                Subscribe to our newsletter
-              </h3>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="px-4 py-2 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500  flex-1 text-gray-300"
-                />
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-300 whitespace-nowrap cursor-pointer">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
 
           {/* Product Links */}
@@ -46,7 +30,7 @@ const Footer = () => {
                 item => (
                   <li key={item}>
                     <a
-                      href={`#${item.toLowerCase()}`}
+                      href="#"
                       className="text-gray-400 hover:text-white transition-colors duration-300"
                     >
                       {item}
@@ -66,7 +50,7 @@ const Footer = () => {
               {['About', 'Blog', 'Careers', 'Press'].map(item => (
                 <li key={item}>
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href="#"
                     className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {item}
@@ -86,7 +70,7 @@ const Footer = () => {
                 item => (
                   <li key={item}>
                     <a
-                      href={`#${item.toLowerCase().replace(' ', '')}`}
+                      href="#"
                       className="text-gray-400 hover:text-white transition-colors duration-300"
                     >
                       {item}
@@ -96,7 +80,7 @@ const Footer = () => {
               )}
             </ul>
 
-            <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
+            <h2 className="text-lg font-semibold mb-4">Social Links</h2>
             <div className="flex space-x-4">
               {[
                 { icon: <FaFacebook size={18} />, label: 'Facebook' },
@@ -106,7 +90,7 @@ const Footer = () => {
               ].map((social, index) => (
                 <a
                   key={index}
-                  href={`#${social.label.toLowerCase()}`}
+                  href="#"
                   className="bg-gray-800 hover:bg-blue-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110"
                   aria-label={social.label}
                 >

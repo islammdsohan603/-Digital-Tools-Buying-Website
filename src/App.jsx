@@ -27,28 +27,39 @@ const App = () => {
 
   const [cart, setCart] = useState([]);
 
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div>
-      <Navbar cart={cart} />
-      <Home />
+      <Navbar cart={cart} darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Home darkMode={darkMode} />
       <Stats />
 
       <Suspense
         fallback={
-          <h1 className="text-center text-2xl font-semibold">Loading...</h1>
+          <div className="flex items-center justify-center mt-10">
+            <span className="loading loading-spinner loading-xl mx-auto "></span>
+          </div>
         }
       >
-        <ProductsData loadData={loadData} cart={cart} setCart={setCart} />
+        <ProductsData
+          loadData={loadData}
+          cart={cart}
+          setCart={setCart}
+          darkMode={darkMode}
+        />
       </Suspense>
 
-      <Steps />
+      <Steps darkMode={darkMode} />
 
       <Suspense
         fallback={
-          <h1 className="text-center text-2xl font-semibold">Loading...</h1>
+          <div className="flex items-center justify-center mt-10 mb-10">
+            <span className="loading loading-spinner loading-xl mx-auto "></span>
+          </div>
         }
       >
-        <PricingCartd loadPricingData={loadPricingData} />
+        <PricingCartd loadPricingData={loadPricingData} darkMode={darkMode} />
       </Suspense>
 
       <ViewPicingBtn />

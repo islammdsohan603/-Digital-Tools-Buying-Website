@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import { Menu, ShoppingCart, X } from 'lucide-react';
+import { Menu, ShoppingCart, X, MoonStar, Sun } from 'lucide-react';
 
-const Navbar = ({ cart }) => {
+const Navbar = ({ cart, darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   return (
     <div>
-      <header className=" shadow-2xs py-4">
+      <header
+        className={`shadow-2xs py-4 ${darkMode ? 'bg-black/70 text-white' : ''}`}
+      >
         <nav className="w-10/12 mx-auto flex items-center justify-between">
           <h1 className="text-lg sm:text-2xl md:text-4xl font-bold bg-linear-to-r from-[#4F39F6] to-[#627382] text-transparent bg-clip-text cursor-pointer">
             <a href="#home"> DigiTools</a>
@@ -30,20 +36,30 @@ const Navbar = ({ cart }) => {
             </li>
           </ul>
 
-          <div className="hidden md:flex items-center gap-4">
-            <div className=" relative">
-              <ShoppingCart className="w-6 h-6 text-[#4F39F6] hover:scale-110 transition-transform duration-300 cursor-pointer" />
-              <span className="absolute -top-2 -right-2 bg-[#4F39F6] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
-                {cart.length}
-              </span>
+          <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4">
+              <div className=" relative">
+                <ShoppingCart className="w-6 h-6 text-[#4F39F6] hover:scale-110 transition-transform duration-300 cursor-pointer" />
+                <span className="absolute -top-2 -right-2 bg-[#4F39F6] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
+                  {cart.length}
+                </span>
+              </div>
+
+              <button className="px-4 py-2 text-sm sm:text-base rounded-full  text-[#4F39F6] bg-transparent cursor-pointer font-semibold shadow-2xs hover:scale-110 transition-transform duration-300">
+                Login
+              </button>
+              <button className="px-4 py-2 text-sm sm:text-base cursor-pointer font-semibold border border-[#4F39F6] text-white bg-linear-to-r from-[#4F39F6] to-[#627382] rounded-full">
+                Get Started
+              </button>
             </div>
 
-            <button className="px-4 py-2 text-sm sm:text-base rounded-full  text-[#4F39F6] bg-transparent cursor-pointer font-semibold shadow-2xs hover:scale-110 transition-transform duration-300">
-              Login
-            </button>
-            <button className="px-4 py-2 text-sm sm:text-base cursor-pointer font-semibold border border-[#4F39F6] text-white bg-linear-to-r from-[#4F39F6] to-[#627382] rounded-full">
-              Get Started
-            </button>
+            {/* DarkMode */}
+            <div
+              onClick={handleDarkMode}
+              className=" w-10 h-10 object-contain rounded-full bg-base-200 hidden md:flex items-center justify-center cursor-pointer hover:scale-105 duration-300 hover:bg-base-300 text-black"
+            >
+              {darkMode ? <Sun /> : <MoonStar />}
+            </div>
           </div>
 
           <div className="lg:hidden">
@@ -60,7 +76,7 @@ const Navbar = ({ cart }) => {
       {
         /* Mobile Menu */
         isOpen && (
-          <div className="lg:hidden bg-white shadow-2xs py-4 w-2xs mx-auto rounded-lg mt-2 right-0 top-16 absolute">
+          <div className="lg:hidden bg-white shadow-2xs py-4 w-2xs mx-auto rounded-lg mt-2 right-0 top-12 absolute">
             <ul className="flex flex-col items-center gap-4 text-sm">
               <li
                 onClick={() => setIsOpen(false)}
@@ -114,6 +130,14 @@ const Navbar = ({ cart }) => {
               >
                 Get Started
               </button>
+
+              {/* DarkMode */}
+              <div
+                onClick={handleDarkMode}
+                className=" w-full h-10 object-contain rounded-full bg-base-200 flex md:hidden items-center justify-center cursor-pointer hover:scale-105 duration-300 hover:bg-base-300 text-black"
+              >
+                {darkMode ? <Sun /> : <MoonStar />}
+              </div>
             </div>
           </div>
         )
