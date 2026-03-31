@@ -11,9 +11,9 @@ const Navbar = ({ cart, darkMode, setDarkMode }) => {
   return (
     <div>
       <header
-        className={`shadow-2xs py-4 ${darkMode ? 'bg-black/70 text-white' : ''}`}
+        className={`fixed z-50 w-full shadow-2xs py-4 ${darkMode ? 'bg-black/80 text-white' : 'bg-base-200'}`}
       >
-        <nav className="w-10/12 mx-auto flex items-center justify-between">
+        <nav className="  w-10/12 mx-auto flex items-center justify-between">
           <h1 className="text-lg sm:text-2xl md:text-4xl font-bold bg-linear-to-r from-[#4F39F6] to-[#627382] text-transparent bg-clip-text cursor-pointer">
             <a href="#home"> DigiTools</a>
           </h1>

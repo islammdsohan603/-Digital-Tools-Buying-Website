@@ -5,7 +5,7 @@ import banner from '../assets/banner.png';
 const Home = ({ darkMode }) => {
   return (
     <div
-      className={`${darkMode ? 'bg-black text-white' : 'bg-base-100 text-black'}`}
+      className={`pt-16 ${darkMode ? 'bg-black text-white' : 'bg-base-100 text-black'}`}
     >
       <div className="w-11/12   lg:w-10/12 mx-auto pt-6 pb-20 md:pt-10 lg:pt-16 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">

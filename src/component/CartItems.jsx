@@ -78,7 +78,7 @@ const CartItems = ({ cart, setCart }) => {
             disabled={checkout}
             className="px-6 py-3 cursor-pointer bg-linear-to-r from-[#4F39F6] to-[#627382] text-white rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            {checkout ? 'Processing...' : 'Checkout'}
+            {checkout ? 'Processing...' : 'Proceed To Checkout'}
           </button>
         </div>
 
