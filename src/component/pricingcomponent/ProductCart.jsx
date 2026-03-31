@@ -27,11 +27,11 @@ const ProductCart = ({ item, cart, setCart }) => {
         {tag}
       </div>
 
-      <div className="w-14 h-14 rounded-full bg-base-300 shadow-2xl p-1">
+      <div className="w-14 h-14 rounded-full bg-base-300 shadow-2xl p-1 border border-red-300 ">
         <img
           src={image}
           alt=""
-          className="w-full h-full object-cover rounded-full"
+          className="w-12 h-12 object-cover rounded-full"
         />
       </div>
       <h1 className="text-2xl font-bold"> {name} </h1>

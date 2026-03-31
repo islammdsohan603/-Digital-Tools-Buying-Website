@@ -7,6 +7,19 @@ React.
 
 ---
 
+## Home Page
+
+![Home page](<Screenshot 2026-03-31 103528.png>)
+
+## Products Page
+
+![Product](<Screenshot 2026-03-31 103605.png>)
+![Product item](<Screenshot 2026-03-31 103634.png>)
+
+## Footer
+
+![Footer](<Screenshot 2026-03-31 103752.png>)
+
 ## 🌐 Live Demo
 
 🔗 Live Site: https://digital-tools-web.netlify.app/
@@ -82,17 +95,6 @@ management, toast notifications, and dynamic UI updates.
 - 🪜 Steps section
 - 💰 Pricing section
 - 🦶 Footer
-
----
-
-```
-src/
- ├── components/
- ├── data/
- ├── pages/
- ├── App.jsx
- └── main.jsx
-```
 
 ---
 

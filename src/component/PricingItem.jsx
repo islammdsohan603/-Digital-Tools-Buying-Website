@@ -11,7 +11,7 @@ const PricingItem = ({ plans }) => {
 
   return (
     <div
-      className={` relative cursor-pointer h-full flex flex-col bg-base-200 p-6 rounded-2xl shadow-2xl space-y-2 hover:scale-105 duration-300 ${popular ? 'bg-linear-to-l from-[#6930c3] to-[#5e60ce] text-white' : 'bg-white text-gray-800'}`}
+      className={` border-2 relative cursor-pointer h-full flex flex-col bg-base-200 p-6 rounded-2xl shadow-2xl space-y-2 hover:scale-105 duration-300 ${popular ? 'bg-linear-to-l from-[#6930c3] to-[#5e60ce] text-white' : 'bg-white text-gray-800'}`}
     >
       <div
         className={` absolute -top-2 px left-1/2 transform -translate-x-1/2 px-3 py-1 rounded-full text-xs font-bold ${popular && 'bg-yellow-500 text-white'}`}
