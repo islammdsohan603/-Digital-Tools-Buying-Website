@@ -76,8 +76,8 @@ const Navbar = ({ cart, darkMode, setDarkMode }) => {
       {
         /* Mobile Menu */
         isOpen && (
-          <div className="lg:hidden bg-white shadow-2xs py-4 w-2xs mx-auto rounded-lg mt-2 right-0 top-12 absolute">
-            <ul className="flex flex-col items-center gap-4 text-sm">
+          <div className=" lg:hidden  shadow-2xs py-4 w-2xs mx-auto rounded-lg mt-2 right-0 top-12 absolute">
+            <ul className="bg-base-300 shadow-2xl p-10 right-0  fixed z-50 w-fit flex flex-col items-center gap-4 text-sm">
               <li
                 onClick={() => setIsOpen(false)}
                 className="text-lg text-neutral-500 font-semibold rounded-xl px-2 py-1 cursor-pointer hover:bg-linear-to-l from-[#F875] to-[#6287]  duration-300 transition-transform"
