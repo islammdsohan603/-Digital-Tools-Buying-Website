@@ -22,7 +22,7 @@ React.
 
 ## 🌐 Live Demo
 
-🔗 Live Site: https://digital-tools-web.netlify.app/
+🔗 Live Site: https://chic-concha-7ad147.netlify.app/
 
 🔗 GitHub Repo: https://github.com/islammdsohan603/-Digital-Tools-Buying-Website
 
